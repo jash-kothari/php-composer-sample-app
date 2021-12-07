@@ -12,22 +12,22 @@ pipeline {
                 sh "composer -V"
             }
         }
-        stage('stage three') {
+        stage('stage two') {
             steps {
                 sh "composer -V"
             }
         }
-        stage('stage four') {
+        stage('stage three') {
             steps {
                 sh "composer install --ignore-platform-reqs --no-interaction --no-plugins --no-scripts --prefer-dist"
             }
         }
-        stage('stage five') {
+        stage('stage four') {
             steps {
-                sh "cp -r . /var/www/html"
+                sh "cp -r * /var/www/html"
             }
         }
-        stage('stage six') {
+        stage('stage four') {
             steps {
                 echo "Done"
             }
