@@ -9,3 +9,4 @@ require('vendor/autoload.php');
 sleep(rand(1, 3));
 $time = \PHP_Timer::stop();
 print \PHP_Timer::secondsToTimeString($time);
+?>
