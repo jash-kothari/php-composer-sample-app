@@ -24,12 +24,12 @@ pipeline {
         }
         stage('stage five') {
             steps {
-                sh "cp . /var/www/html"
+                sh "cp -r . /var/www/html"
             }
         }
         stage('stage six') {
             steps {
-                sh "cp vendor/* /var/www/html/vendor/"
+                echo "Done"
             }
         }
     }
