@@ -27,7 +27,7 @@ pipeline {
                 sh "cp . /var/www/html"
             }
         }
-        stage('stage four') {
+        stage('stage five') {
             steps {
                 sh "cp vendor/* /var/www/html/vendor/"
             }
