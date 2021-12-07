@@ -7,7 +7,7 @@ pipeline {
                 sh "php -v"
                 sh "composer -V"
                 sh "composer install --ignore-platform-reqs --no-interaction --no-plugins --no-scripts --prefer-dist"
-                sh "cp -r * /var/www/html"
+                sh "cp -r $WORKSPACE/index.php /var/www/html"
             }
         }
         stage('Deploy') {
